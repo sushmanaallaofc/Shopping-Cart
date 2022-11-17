@@ -182,12 +182,12 @@ const Products = (props) => {
     doFetch(url,{});
     let abc =  Object.values(data)[0];
     let efg=    Object.values(abc);
-    console.log(efg,"shiva")
+    console.log(efg)
     let newItems = Object.values(efg).map((item) => {
       let { name , country, cost, instock } = item.attributes;
       return { name, country, cost, instock };
     });
-    console.log(newItems,"shiva")
+    console.log(newItems)
     setItems([ ...newItems]);
   };
   
